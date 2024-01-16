@@ -7,7 +7,10 @@
   </script>
   
   {#if image}
-    <div class="overlay" on:click={closeOverlay} on:keyup={closeOverlay}>
+    <div class="overlay" 
+    on:click={closeOverlay} 
+    on:keydown={closeOverlay}
+    on:touchstart={closeOverlay}>
       <img class="full-size-image" src={image.src} alt={image.alt}>
       <div class="description">{image.description}</div>
       <span class="close-button">⨯</span>

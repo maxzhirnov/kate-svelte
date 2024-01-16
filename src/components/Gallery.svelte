@@ -33,8 +33,7 @@
             {#each items1 as item}
             <div class="item" 
                 on:click={() => openImage(item)} 
-                on:keydown={() => openImage(item)} 
-                on:touchstart={() => openImage(item)}>
+                on:keydown={() => openImage(item)}>
                 <Card path={imagesPath+item.id} alt={item.alt} />
             </div>
             {/each}
@@ -43,8 +42,7 @@
             {#each items2 as item}
             <div class="item" 
                 on:click={() => openImage(item)} 
-                on:keydown={() => openImage(item)} 
-                on:touchstart={() => openImage(item)}>
+                on:keydown={() => openImage(item)}>
                 <Card path={imagesPath+item.id} alt={item.alt} />
             </div>
             {/each}
