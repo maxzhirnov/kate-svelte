@@ -3,6 +3,7 @@
   
     function closeOverlay() {
       image = null;
+      document.body.style.overflow = '';
     }
   </script>
   

@@ -23,6 +23,7 @@
     function openImage(image) {
         image.src = imagesPath + image.id
         selectedImage = image;
+        document.body.style.overflow = 'hidden';
     }
 
 </script>
