@@ -3,7 +3,7 @@
 
 </script>
 <div class="title">
-    <h1>Kate Zvereva x Artworks</h1>
+    <h1>Kate Zvereva</h1>
 </div>
 
 <style>
@@ -17,7 +17,7 @@
     }
 
     .title h1 {
-        font-weight: 700;
+        font-weight: 800;
         text-transform: uppercase;
     }
 </style>

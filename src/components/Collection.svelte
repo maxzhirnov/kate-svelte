@@ -27,7 +27,7 @@
 <style>
     .divider {
         width: 30%;
-        border-bottom: 4px solid black;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.1);
         margin-bottom: 1rem;
     }
     .items {
