@@ -13,7 +13,7 @@ jobs:
     - name: Install Node.js
       uses: actions/setup-node@v1
       with:
-        node-version: '14'  # Specify your Node.js version here
+        node-version: '20'  # Specify your Node.js version here
     - name: Install Dependencies
       run: npm install
     - name: Build
