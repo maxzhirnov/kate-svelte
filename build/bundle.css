@@ -1,0 +1,8 @@
+.item.svelte-15lakoe.svelte-15lakoe{position:relative}.item.svelte-15lakoe img.svelte-15lakoe{width:100%;object-fit:contain;display:block}.item.svelte-15lakoe .hover-info.svelte-15lakoe{position:absolute;text-align:center;bottom:0;left:0;width:100%;height:100px;background-color:rgba(0,0,0,0.8);color:white;display:flex;justify-content:center;align-items:center;opacity:0;transition:opacity 0.5s}.item.svelte-15lakoe:hover .hover-info.svelte-15lakoe{opacity:1}
+.overlay.svelte-ces7xb{position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0, 0, 0, 0.9);display:flex;flex-direction:column;justify-content:center;align-items:center}.full-size-image.svelte-ces7xb{max-width:90%;max-height:90%}.description.svelte-ces7xb{color:white}.close-button.svelte-ces7xb{color:rgb(214, 214, 214);position:fixed;top:.5rem;right:2rem;cursor:pointer;font-size:3rem}.close-button.svelte-ces7xb:hover{color:white;font-size:3.1rem}
+.container.svelte-1ohnqhb{display:flex;justify-content:center}.items.svelte-1ohnqhb{display:flex;max-width:800px;gap:2rem}.item.svelte-1ohnqhb{margin-bottom:2rem}@media(max-width: 600px){.items.svelte-1ohnqhb{flex-direction:column}}
+.title.svelte-f4gu5n.svelte-f4gu5n{display:flex;align-items:center;justify-content:center;margin-top:1rem;margin-bottom:1rem}.title.svelte-f4gu5n h1.svelte-f4gu5n{font-weight:700;text-transform:uppercase}
+main {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+footer.svelte-8pjpvf.svelte-8pjpvf{margin-top:50px;height:100px;display:flex;align-items:center;justify-content:center;color:black}footer.svelte-8pjpvf a.svelte-8pjpvf{color:black;text-decoration:none;background-color:transparent;cursor:pointer}
