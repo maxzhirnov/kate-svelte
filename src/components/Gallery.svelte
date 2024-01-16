@@ -1,78 +1,66 @@
 <script>
-    import Card from "./Card.svelte";
     import Overlay from "./Overlay.svelte";
+    import Collection from "./Collection.svelte";
 
     // https://storage.yandexcloud.net/kzart/
     let imagesPath = 'https://storage.yandexcloud.net/kzart/'
-    let items1 = [
-        {id: 'svoboda.webp', alt: 'alt', description: 'масло, карандаш/холст на подрамнике/40х50'},
-        {id: 'snake.webp', alt: 'alt', description: 'масло/холст на подрамнике/40х50'},
-        {id: 'teddy.webp', alt: 'alt', description: 'масло/холст картонный в раме/30х40'},
-        {id: 'father.webp', alt: 'alt', description: 'масло/холст на подрамнике/50х60'},
-    ]
-    let items2 = [
-        {id: 'lady.webp', alt: 'alt', description: 'масло/холст на подрамнике/60х80'},
-        {id: 'cigs.webp', alt: 'alt', description: 'масло/холст картонный/30х20'},
-        {id: 'nebudi.webp', alt: 'alt', description: 'масло/холст на подрамнике/33х23'},
-        {id: 'apple.webp', alt: 'alt', description: 'масло/холст на подрамнике/40х30'},
-        {id: 'max.webp', alt: 'alt', description: 'масло/холст картонный/30х40'},
-        {id: 'wakey.webp', alt: 'alt', description: 'масло/холст картонный в раме/40х30'},
+    
+    let itemSets =[
+        [
+            {id: 'svoboda.webp', alt: 'alt', description: 'масло, карандаш/холст на подрамнике/40х50', src: imagesPath+'svoboda.webp'},
+            {id: 'nebudi.webp', alt: 'alt', description: 'масло/холст на подрамнике/33х23', src: imagesPath+'nebudi.webp'},
+        ],
+        [
+            {id: 'snake.webp', alt: 'alt', description: 'масло/холст на подрамнике/40х50', src: imagesPath+'snake.webp'},
+            {id: 'lady.webp', alt: 'alt', description: 'масло/холст на подрамнике/60х80', src: imagesPath+'lady.webp'},
+            {id: 'apple.webp', alt: 'alt', description: 'масло/холст на подрамнике/40х30', src: imagesPath+'apple.webp'},
+        ],
+        [
+            {id: 'teddy.webp', alt: 'alt', description: 'масло/холст картонный в раме/30х40', src: imagesPath+'teddy.webp'},
+            {id: 'cigs.webp', alt: 'alt', description: 'масло/холст картонный/30х20', src: imagesPath+'cigs.webp'},
+            {id: 'wakey.webp', alt: 'alt', description: 'масло/холст картонный в раме/40х30', src: imagesPath+'wakey.webp'},
+        ],
+        [
+            {id: 'max.webp', alt: 'alt', description: 'масло/холст картонный/30х40', src: imagesPath+'max.webp'},
+            {id: 'father.webp', alt: 'alt', description: 'масло/холст на подрамнике/50х60', src: imagesPath+'father.webp'},
+        ]
     ]
 
     let selectedImage = null;
+
     function openImage(image) {
         image.src = imagesPath + image.id
         selectedImage = image;
         document.body.style.overflow = 'hidden';
     }
 
+    function handleCollectionItemClick(event) {
+        openImage(event.detail.item)
+    }
+
 </script>
 
 <div class="container">
-    <div class="items">
-        <div class="left">
-            {#each items1 as item}
-            <div class="item" 
-                on:click={() => openImage(item)} 
-                on:keydown={() => openImage(item)}>
-                <Card path={imagesPath+item.id} alt={item.alt} />
-            </div>
-            {/each}
-        </div>
-        <div class="right">
-            {#each items2 as item}
-            <div class="item" 
-                on:click={() => openImage(item)} 
-                on:keydown={() => openImage(item)}>
-                <Card path={imagesPath+item.id} alt={item.alt} />
-            </div>
-            {/each}
-        </div>
+    <div class="content">
+        {#each itemSets as set}
+            <Collection items={set} on:itemClick={handleCollectionItemClick}/>
+        {/each}
     </div>
 </div>
+
 {#key selectedImage}
     <Overlay image={selectedImage} />
 {/key}
 
-
 <style>
     .container {
         display: flex;
-		justify-content: center;
-    }
-    .items {
-        display: flex;
-        max-width: 800px;
-        gap: 2rem;
-    }
-    .item {
-        margin-bottom: 2rem;
-    }
-  /* Media query for mobile view */
-  @media (max-width: 600px) {
-    .items {
         flex-direction: column;
+        align-items: center;
     }
-  }
-  
+    .content {
+        max-width: 800px;
+    }
+
+    @media (max-width: 600px) {}
 </style>
