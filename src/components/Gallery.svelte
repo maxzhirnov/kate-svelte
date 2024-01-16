@@ -12,8 +12,8 @@
         ],
         [
             {id: 'snake.webp', alt: 'alt', description: 'масло/холст на подрамнике/40х50', src: imagesPath+'snake.webp'},
-            {id: 'lady.webp', alt: 'alt', description: 'масло/холст на подрамнике/60х80', src: imagesPath+'lady.webp'},
             {id: 'apple.webp', alt: 'alt', description: 'масло/холст на подрамнике/40х30', src: imagesPath+'apple.webp'},
+            {id: 'lady.webp', alt: 'alt', description: 'масло/холст на подрамнике/60х80', src: imagesPath+'lady.webp'},
         ],
         [
             {id: 'teddy.webp', alt: 'alt', description: 'масло/холст картонный в раме/30х40', src: imagesPath+'teddy.webp'},

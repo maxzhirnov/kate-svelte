@@ -26,14 +26,14 @@
 
 <style>
     .divider {
-        width: 30%;
-        border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+        width: 100%;
+        border-bottom: .5px solid rgb(0, 0, 0);
         margin-bottom: 1rem;
     }
     .items {
         column-count: 2;
         column-gap: 1rem;
-        margin-bottom: 3rem;
+        margin-bottom: 1rem;
     }
     .item {
         break-inside: avoid;
