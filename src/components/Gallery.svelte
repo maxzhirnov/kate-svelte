@@ -32,14 +32,14 @@
         <div class="left">
             {#each items1 as item}
             <div class="item" on:click={() => openImage(item)} on:keydown={() => openImage(item)}>
-                <Card path={imagesPath+item.id} alt={item.alt} description={item.description} />
+                <Card path={imagesPath+item.id} alt={item.alt} />
             </div>
             {/each}
         </div>
         <div class="right">
             {#each items2 as item}
             <div class="item"  on:click={() => openImage(item)} on:keydown={() => openImage(item)}>
-                <Card path={imagesPath+item.id} alt={item.alt} description={item.description} />
+                <Card path={imagesPath+item.id} alt={item.alt} />
             </div>
             {/each}
         </div>
