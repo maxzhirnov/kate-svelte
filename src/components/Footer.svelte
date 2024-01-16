@@ -12,6 +12,7 @@
     align-items: center;
     justify-content: center;
     color: black;
+    font-weight: 600;
     }
 
     footer a {
