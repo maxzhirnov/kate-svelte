@@ -3,16 +3,16 @@
     export let alt
 </script>
 
-<div class="item">
+<div class="card">
     <img src = {path} alt = {alt} />
 </div>
 
 <style>
-    .item {
+    .card {
         position: relative;
     }
     
-    .item img {
+    .card img {
         width: 100%;
         object-fit:contain;
         display: block;

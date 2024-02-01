@@ -5,7 +5,7 @@
     // https://storage.yandexcloud.net/kzart/
     let imagesPath = 'https://storage.yandexcloud.net/kzart/'
     
-    let itemSets =[
+    let itemSets = [
         [
             {id: 'svoboda.webp', alt: 'alt', description: 'масло, карандаш/холст на подрамнике/40х50', src: imagesPath+'svoboda.webp'},
             {id: 'nebudi.webp', alt: 'alt', description: 'масло/холст на подрамнике/33х23', src: imagesPath+'nebudi.webp'},

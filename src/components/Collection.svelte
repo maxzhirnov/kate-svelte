@@ -15,9 +15,10 @@
     <div class="divider"></div>
     <div class="items">
         {#each items as item}
+        <!-- svelte-ignore a11y-no-static-element-interactions -->
         <div class="item" 
         on:click={() => handleClick(item)} 
-            on:keydown={() => handleClick(item)}>
+        on:keydown={() => handleClick(item)}>
             <Card path={item.src} alt={item.alt}/>
         </div>
         {/each}
