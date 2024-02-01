@@ -1,7 +1,7 @@
 <footer>
     <div class="question">Wanna buy?</div>
     <div>
-        Buy <a class="gallery-link" href="https://artonline24.ru/artists/info/8608/"> <span class="underline">here</span></a> or email: 
+        buy <a class="gallery-link" href="https://artonline24.ru/artists/info/8608/"> <span class="underline">here</span></a> or email: 
         <a href="mailto:zverevaekatval@gmail.com">
             <i class="fa-regular fa-envelope"></i> zverevaekatval@gmail.com
         </a>
