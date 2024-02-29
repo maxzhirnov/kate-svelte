@@ -19,7 +19,7 @@
         <div class="item" 
         on:click={() => handleClick(item)} 
         on:keydown={() => handleClick(item)}>
-            <Card path={item.src} alt={item.alt}/>
+            <Card path={item.src} alt={item.alt} sold={item.sold}/>
         </div>
         {/each}
     </div>

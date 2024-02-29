@@ -16,7 +16,7 @@
             {id: 'lady.webp', alt: 'alt', description: 'масло/холст на подрамнике/60х80', src: imagesPath+'lady.webp'},
         ],
         [
-            {id: 'teddy.webp', alt: 'alt', description: 'масло/холст картонный в раме/30х40', src: imagesPath+'teddy.webp'},
+            {id: 'teddy.webp', alt: 'alt', description: 'масло/холст картонный в раме/30х40', src: imagesPath+'teddy.webp', sold: true},
             {id: 'cigs.webp', alt: 'alt', description: 'масло/холст картонный/30х20', src: imagesPath+'cigs.webp'},
             {id: 'wakey.webp', alt: 'alt', description: 'масло/холст картонный в раме/40х30', src: imagesPath+'wakey.webp'},
         ],
