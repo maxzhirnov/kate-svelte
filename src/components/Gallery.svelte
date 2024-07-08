@@ -25,8 +25,8 @@
             {id: 'father.webp', alt: 'alt', description: 'масло/холст на подрамнике/50х60', src: imagesPath+'father.webp'},
         ],
         [
-            {id: 'ladyback.webp', alt: 'alt', description: 'масло, акрил, холст на подрамнике/40х50', src: imagesPath+'ladyback.webp'},
             {id: 'cama.webp', alt: 'alt', description: 'масло, акрил, холст на подрамнике/40х50', src: imagesPath+'cama.webp'},
+            {id: 'ladyback.webp', alt: 'alt', description: 'масло, акрил, холст на подрамнике/40х50', src: imagesPath+'ladyback.webp'},
         ]
     ]
 
