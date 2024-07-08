@@ -18,10 +18,15 @@
         [
             {id: 'cigs.webp', alt: 'alt', description: 'масло/холст картонный/30х20', src: imagesPath+'cigs.webp'},
             {id: 'wakey.webp', alt: 'alt', description: 'масло/холст картонный в раме/40х30', src: imagesPath+'wakey.webp'},
+            {id: 'bear2.webp', alt: 'alt', description: 'масло/холст картонный в раме/50х40', src: imagesPath+'bear2.webp'},
         ],
         [
             {id: 'max.webp', alt: 'alt', description: 'масло/холст картонный/30х40', src: imagesPath+'max.webp'},
             {id: 'father.webp', alt: 'alt', description: 'масло/холст на подрамнике/50х60', src: imagesPath+'father.webp'},
+        ],
+        [
+            {id: 'ladyback.webp', alt: 'alt', description: 'масло, акрил, холст на подрамнике/40х50', src: imagesPath+'ladyback.webp'},
+            {id: 'cama.webp', alt: 'alt', description: 'масло, акрил, холст на подрамнике/40х50', src: imagesPath+'cama.webp'},
         ]
     ]
 
